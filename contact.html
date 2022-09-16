@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">  
+        <title>University Website Design - Easy Tutorials</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.css">
+</head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" /></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTECT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>    
+            </nav>
+
+            <h1>Contact Us</h1>
+           
+            </section>
+<!--------------contact----------------->            
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425292.22148242174!2d72.80522959056522!3d33.615798837593964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2sde!4v1660242887010!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>Islamabad, Pakistan</p>
+            
+        </span>
+        </div>
+
+        <div class="contact-col">
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+92 321 125 2563</h5>
+                <p>Monday to Satureday, 10AM to 6PM</p>
+            
+        </span>
+        </div>
+
+        <div class="contact-col">
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>info@gmail.com</h5>
+                <p>Email us your query</p>
+            
+        </span>
+        </div>
+
+    </div>
+    <div class="contact-col">
+
+    <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter email address" required>
+        <input type="text" name="subject" placeholder="Enter your subject" required>
+        <textarea row="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message
+        </button>
+
+    </form>
+
+    </div>
+
+    </div>
+
+
+</section>
+
+
+<!--------------Footer------------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, <br>auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Mage with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+ 
+
+
+<!-------javascrip--------------->
+            <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+    
+        navLinks.style.right= "0";
+    }    
+    function hideMenu(){
+        navLinks.style.right ="-200px"
+    }    
+</script>
+    </body>
+</html>
